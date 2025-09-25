@@ -39,7 +39,6 @@ public class playerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("NextLevel"))
         {
             int currentScene = SceneManager.GetActiveScene().buildIndex;
-            // https://discussions.unity.com/t/scenemanager-is-only-finding-one-scene/797612
             if (currentScene < SceneManager.sceneCountInBuildSettings - 1)
             {
                 SceneManager.LoadScene(currentScene + 1);
